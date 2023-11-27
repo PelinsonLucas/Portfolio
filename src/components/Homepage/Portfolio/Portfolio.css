@@ -1,7 +1,7 @@
 .portfolio-section {
   height: 100vh;
   padding: 2em;
-  background-color: #f4f4f4;
+  background-color: #000000;
 }
 
 .section-title {
@@ -10,13 +10,17 @@
 }
 
 .projects {
-  display: flex;
+  height: 80%;
+  display: grid;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 5em;
 }
 
 .project {
-  width: 45%; /* Adjust as needed */
+  border-radius: 5px;
+  height: 300px;
+  width: 200px;
   margin-bottom: 2em;
   padding: 1em;
   background-color: #fff;
@@ -26,16 +30,31 @@
 }
 
 .project-title {
+  margin-top: 10%;
   font-size: 1.5em;
 }
 
 .project-description {
   color: #666;
 }
-
-.project-screenshot {
-  animation: slide-fwd-right 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  width: 100%;
-  max-width: 300px;
-  margin-top: 1em;
+.project-icon-container{
+  display: flex;
+  margin: auto;
+  aspect-ratio: 1/1;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  height: 40%;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  background-image: linear-gradient(to bottom right, rgba(82, 83, 84, 0.38) 5%, rgba(104, 111, 128, 0.93) 36%, #EEE 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(82, 83, 84, 0.38) 5%, rgba(104, 111, 128, 0.93) 36%, #EEE 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(82, 83, 84, 0.38) 5%, rgba(104, 111, 128, 0.93) 36%, #EEE 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(82, 83, 84, 0.38) 5%, rgba(104, 111, 128, 0.93) 36%, #EEE 50%) top right / 50% 50% no-repeat;
+  background-blend-mode: color;
+  transform: rotate(45deg);
+}
+.project-icon {
+  transform: rotate(-45deg);
+  align-self: center;
+  display: flex;
+  border-radius: 5px;
+  height: 62%;
 }

@@ -1,9 +1,9 @@
 @keyframes slide-fwd-right {
   0% {
-    transform: translateZ(0) translateX(0);
+    transform: translateZ(-100%) translateX(-100%);
   }
   100% {
-    transform: translateZ(160px) translateX(100px);
+    transform: translateZ(100%) translateX(100%);
   }
 }
 
@@ -15,7 +15,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .hide{
 
   opacity: 0;
@@ -27,7 +26,9 @@
 .show{
 
   opacity: 1;
-  animation: slide-fwd-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
+/*  animation: slide-fwd-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+*/
+  filter: blur(0px);
+  transform: translateX(0%);
+  transition: all 1s;
 }
-

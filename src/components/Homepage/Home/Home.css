@@ -1,24 +1,62 @@
+
 .home-section {
+  top: 0;
     position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: middle;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100vw;
+  }
+
+  .background{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.0)), url("../../Assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .texts {
+    margin-top: -10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
   }
   .greeting {
     font-size: 2em;
-    color: #333;
+    color: #ffffff;
   }
   
   .introduction {
     font-size: 1.2em;
-    color: #666;
+    color: #ffffff;
   }
   
   .profile-picture {
+    margin-left: 1em;
+    margin-top: -10vh;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+  }
+
+  #tsparticles {
+    min-height: 250px;
+    height: 30vh;
+    width: 98vw;
+    max-width: 800px;
+    margin-top: -10vh;
+
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+    align-self: center;
   }
