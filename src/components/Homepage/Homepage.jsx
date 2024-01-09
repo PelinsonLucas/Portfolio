@@ -2,6 +2,7 @@ import {React, useRef, useState, useEffect, useCallback} from 'react'
 import './Homepage.css'
 import Home from './Home/Home.jsx'
 import Portfolio from './Portfolio/Portfolio.jsx'
+import Contact from './Contact/Contact.jsx'
 
 
 export const Homepage = () => {
@@ -45,6 +46,7 @@ export const Homepage = () => {
       <div className='homepage-container'>
         <Home/>
         <Portfolio/>
+        <Contact/>
       </div>
     </>
   )

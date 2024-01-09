@@ -29,8 +29,9 @@ const particlesLoaded = useCallback(async (container) => {
       <div className="background"></div>
       <Particles
             id = "tsparticles"
-            height='50vh'
-            width='100vh'
+            height='400px'
+            width='800px'
+            className='animated hide'
             init={particlesInit}
             loaded={particlesLoaded}
             options={options}/>

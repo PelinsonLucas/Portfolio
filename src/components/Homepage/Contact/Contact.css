@@ -1,0 +1,117 @@
+.contact-container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  size: fit-content;
+}
+  
+.contact-container > h1 {
+  font-size: 2em;
+  padding-top: 10px;
+}
+.contact-container > p {
+  font-size: 1.4em;
+  padding-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 250px;
+  margin: auto;
+}
+  
+.button {
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  background-color: transparent;
+  background-position: center;
+}
+.linkedin {
+  background: linear-gradient(#25252500, #25252500 50%, #0A66C2 50%, #0A66C2);
+  background-size: 100% 200%;
+  transition: background 0.5s;
+}
+.linkedin > .icon {
+  transition: transform 0.5s, color 0.4s;
+  transition-delay: 0s, 0.1s;
+}
+
+.linkedin:hover {
+  background-position: 100% 100%;
+}
+.linkedin:hover > .icon {
+  transform: rotateY(360deg);
+  color: white;
+  transition: transform 0.5s, color 0.3s;
+  transition-delay: 0s, 0.2s;
+}
+
+.github {
+  background: linear-gradient(#25252500, #25252500 50%, #783ec6 50%, #783ec6);
+  background-size: 100% 200%;
+  transition: background 0.5s;
+}
+.github > .icon {
+  transition: transform 0.5s, color 0.4s;
+  transition-delay: 0s, 0.1s;
+}
+
+.github:hover {
+  background-position: 100% 100%;
+}
+.github:hover > .icon {
+  transform: rotateY(360deg);
+  color: white;
+  transition: transform 0.5s, color 0.3s;
+  transition-delay: 0s, 0.2s;
+}
+
+
+.gmail {
+  background: linear-gradient(#25252500, #25252500 50%, #c71610 50%, #c71610);
+  background-size: 100% 200%;
+  transition: background 0.5s;
+}
+.gmail > .icon {
+  transition: transform 0.5s, color 0.4s;
+  transition-delay: 0s, 0.1s;
+}
+
+.gmail:hover {
+  background-position: 100% 100%;
+}
+.gmail:hover > .icon {
+  transform: rotateY(360deg);
+  color: white;
+  transition: transform 0.5s, color 0.3s;
+  transition-delay: 0s, 0.2s;
+}
+
+.whatsapp {
+  background: linear-gradient(#25252500, #25252500 50%, #25d366 50%, #25d366);
+  background-size: 100% 200%;
+  transition: background 0.5s;
+}
+.whatsapp > .icon {
+  transition: transform 0.5s, color 0.4s;
+  transition-delay: 0s, 0.1s;
+}
+
+.whatsapp:hover {
+  background-position: 100% 100%;
+}
+.whatsapp:hover > .icon {
+  transform: rotateY(360deg);
+  color: white;
+  transition: transform 0.5s, color 0.3s;
+  transition-delay: 0s, 0.2s;
+}

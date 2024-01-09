@@ -1,7 +1,7 @@
   
 .header {
   display: grid;
-  height: 25vh;
+  height: 220px;
   width: 100vw;
   background-color: #4d4d4d;
   position: fixed;
@@ -113,7 +113,7 @@
   border: none;
   color: transparent;
   position: static;
-  height: 5vh;
+  height: 44px;
   transition: 0.5s;
 }
 
@@ -121,6 +121,6 @@
   border: none;
   color: transparent;
   position: static;
-  height: 25vh;
+  height: 220px;
   transition: 0.5s;
 }

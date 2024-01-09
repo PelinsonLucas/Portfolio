@@ -1,21 +1,23 @@
 
 .home-section {
   top: 0;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-  }
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
 
   .background{
     height: 100vh;
     width: 100vw;
     display: flex;
     position: absolute;
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.0)), url("../../Assets/background.jpg");
+    margin-top: -25px;
+    background-image: url('../../Assets/background.png'), linear-gradient(rgba(0, 0, 0, 0.052), rgba(255, 255, 255, 0.316), rgb(255, 255, 255));
+    background-blend-mode: color;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,14 +51,17 @@
   }
 
   #tsparticles {
+    min-width: 400px;
     min-height: 250px;
+    width: 100vw;
     height: 30vh;
-    width: 98vw;
     max-width: 800px;
-    margin-top: -10vh;
+    max-height: 400px;
 
+
+    margin-top: -10vh;
     position: absolute;
-    border-radius: 10px;
-    overflow: hidden;
+    border-radius: 15px;
     align-self: center;
+    overflow: hidden;
   }
