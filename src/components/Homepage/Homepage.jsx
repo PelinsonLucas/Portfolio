@@ -1,4 +1,4 @@
-import {React, useRef, useState, useEffect, useCallback} from 'react'
+import {React, useRef, useEffect} from 'react'
 import './Homepage.css'
 import Home from './Home/Home.jsx'
 import Portfolio from './Portfolio/Portfolio.jsx'
@@ -7,8 +7,6 @@ import Contact from './Contact/Contact.jsx'
 
 export const Homepage = () => {
 
-
-  const [isIntersecting, setIsIntersecting] = useState(false);
   const observer = useRef(); // Use useRef to persist observer across renders
 
   useEffect(() => {
@@ -17,11 +15,9 @@ export const Homepage = () => {
         if(entry.isIntersecting) {
           entry.target.classList.remove('hide');
           entry.target.classList.add('show');
-          setIsIntersecting(true);
         } else {
           entry.target.classList.remove('show');
           entry.target.classList.add('hide');
-          setIsIntersecting(false);
         }
       });
     });

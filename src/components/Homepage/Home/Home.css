@@ -23,13 +23,53 @@
     background-size: cover;
   }
 
-  .texts {
+  #tsparticles {
+    min-width: 400px;
+    min-height: 250px;
+    width: 90vw;
+    height: 30vh;
+    max-width: 800px;
+    max-height: 400px;
     margin-top: -10vh;
+    position: absolute;
+    border-radius: 15px;
+    align-self: center;
+    overflow: hidden;
+  }
+
+  .info-container {
+    min-width: 400px;
+    min-height: 250px;
+    width: 90vw;
+    height: 30vh;
+    max-width: 800px;
+    max-height: 400px;
+    margin-top: -10vh;
+    position: absolute;
+    border-radius: 15px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 1000px) {
+    #tsparticles{
+      min-height: 300px;
+    }
+    .info-container {
+      min-height: 300px;
+    }
+  }
+
+  .texts {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-left: 1em;
+    margin-right: 1em;
   }
   .greeting {
     font-size: 2em;
@@ -43,25 +83,8 @@
   
   .profile-picture {
     margin-left: 1em;
-    margin-top: -10vh;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-  }
-
-  #tsparticles {
-    min-width: 400px;
-    min-height: 250px;
-    width: 100vw;
-    height: 30vh;
-    max-width: 800px;
-    max-height: 400px;
-
-
-    margin-top: -10vh;
-    position: absolute;
-    border-radius: 15px;
-    align-self: center;
-    overflow: hidden;
   }

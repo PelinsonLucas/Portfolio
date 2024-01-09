@@ -35,11 +35,13 @@ const particlesLoaded = useCallback(async (container) => {
             init={particlesInit}
             loaded={particlesLoaded}
             options={options}/>
-      <img src={profile} alt="Profile" className="profile-picture animated hide"/>      
-      <div className="texts animated hide">
-        <h1 className="greeting">Hello, I'm Lucas Pelinson</h1>
-        <p className="introduction">I'm a Software Developer. </p>
-      </div>
+      <div className='info-container animated hide'>
+        <img src={profile} alt="Profile" className="profile-picture"/>      
+        <div className="texts">
+          <h1 className="greeting">Hello, I'm Lucas Pelinson</h1>
+          <p className="introduction">I'm a Software Developer. </p>
+        </div>
+      </div>      
     </div>
   );
 };
