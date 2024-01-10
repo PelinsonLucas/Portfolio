@@ -1,6 +1,6 @@
 .portfolio-section {
   size: fit-content;
-  padding: 2em;
+  padding: 0px;
 }
 
 .section-title {
@@ -10,11 +10,13 @@
 }
 
 .projects {
+  margin-left: 0px;
   height: 80%;
-  display: grid;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-top: 5em;
+  width: 100vw;
 }
 
 .project {
@@ -27,6 +29,8 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: black;
+  border: 0px solid white;
+  margin: 1em 2em 1em 2em;
 }
 
 .project:hover {
@@ -37,9 +41,11 @@
 .project-title {
   margin-top: 10%;
   font-size: 1.5em;
+  height: 10%;
 }
 
 .project-description {
+  height: 20%;
   color: #666;
 }
 .project-icon-container{
@@ -51,24 +57,20 @@
   justify-content: center;
   height: 40%;
   border-radius: 50%;
-  background-color: #f4f4f4;
-  background-image: linear-gradient(to bottom right, rgba(82, 83, 84, 0.38) 5%, rgba(104, 111, 128, 0.93) 36%, #EEE 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(82, 83, 84, 0.38) 5%, rgba(104, 111, 128, 0.93) 36%, #EEE 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(82, 83, 84, 0.38) 5%, rgba(104, 111, 128, 0.93) 36%, #EEE 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(82, 83, 84, 0.38) 5%, rgba(104, 111, 128, 0.93) 36%, #EEE 50%) top right / 50% 50% no-repeat;
-  background-blend-mode: color;
-  transform: rotate(45deg);
+  background-color: #c0c0c0;
 }
 .project-icon {
-  transform: rotate(-45deg);
   align-self: center;
   display: flex;
   border-radius: 5px;
-  height: 62%;
+  height: 60%;
 }
 
 .techStack-icons {
+  height: 20%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 1em;
   font-size: 3em;
 }

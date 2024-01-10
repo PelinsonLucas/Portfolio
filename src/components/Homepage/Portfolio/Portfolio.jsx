@@ -1,8 +1,11 @@
 import React from 'react';
 import './Portfolio.css'; 
 import { FaReact } from "react-icons/fa";
+import { TbBrandCpp } from "react-icons/tb";
+
 
 import weatherappIcon from '../../Assets/weatherapp.png';
+import riffRunnerIcon from '../../Assets/RiffRunner.png';
 
 const Portfolio = () => {
 
@@ -17,7 +20,7 @@ const Portfolio = () => {
     <div id="portfolio" className="portfolio-section">
       <h2 className="section-title animated">My Projects</h2>
       <div className="projects">
-        <a className="project animated hide" onClick={() => goToLink('https://pelinsonlucas.github.io/WeatherApp/')}>
+        <button className="project animated hide" onClick={() => goToLink('https://pelinsonlucas.github.io/WeatherApp/')}>
           <div className="project-icon-container">
             <img src={weatherappIcon} alt="WeatherApp Icon" className="project-icon" />
           </div>
@@ -26,7 +29,18 @@ const Portfolio = () => {
           <div className='techStack-icons'>
             <FaReact />
           </div>
-        </a>
+        </button>
+        
+        <button className="project animated hide" onClick={() => goToLink('https://github.com/tcpassos/RiffRunner')}>
+          <div className="project-icon-container">
+            <img src={riffRunnerIcon} alt="WeatherApp Icon" className="project-icon" />
+          </div>
+          <h3 className="project-title">RiffRunner</h3>
+          <p className="project-description">A Guitar Hero clone game, created in partnership with a colleague for the Computer Graphics course using C++, GLFW and GLAD.</p>
+          <div className='techStack-icons'>
+            <TbBrandCpp />
+          </div>
+        </button>
       </div>
     </div>
   );
