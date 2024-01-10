@@ -19,8 +19,8 @@
 
 .project {
   border-radius: 5px;
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 250px;
   margin-bottom: 2em;
   padding: 1em;
   background-color: #fff;
@@ -62,4 +62,13 @@
   display: flex;
   border-radius: 5px;
   height: 62%;
+}
+
+.techStack-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  font-size: 3em;
 }

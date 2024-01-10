@@ -1,5 +1,6 @@
 import React from 'react';
 import './Portfolio.css'; 
+import { FaReact } from "react-icons/fa";
 
 import weatherappIcon from '../../Assets/weatherapp.png';
 
@@ -22,6 +23,9 @@ const Portfolio = () => {
           </div>
           <h3 className="project-title">Weather App</h3>
           <p className="project-description">A simple weather app using React.js</p>
+          <div className='techStack-icons'>
+            <FaReact />
+          </div>
         </a>
       </div>
     </div>
