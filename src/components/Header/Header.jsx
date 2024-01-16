@@ -18,9 +18,9 @@ const Header = () => {
             <li className="nav-item"><a href="#portfolio" className="nav-link">Portfolio</a></li>
             <li className="nav-item light-gray"><a href="#contact" className="nav-link">Contact</a></li>
             <li className="nav-item">
-              <a className={`${isMenuVisible ?  'menu-button active' : 'menu-button'}`} onClick={toggleMenu}>
+              <button className={`menu-button ${isMenuVisible ?  'active' : ''}`} onClick={toggleMenu}>
                 <span />
-              </a>
+              </button>
             </li>
           </ul>
         </nav> 

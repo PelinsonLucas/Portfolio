@@ -3,6 +3,7 @@ import './Homepage.css'
 import Home from './Home/Home.jsx'
 import Portfolio from './Portfolio/Portfolio.jsx'
 import Contact from './Contact/Contact.jsx'
+import AboutMe from '../AboutMe/AboutMe.jsx'
 
 
 export const Homepage = () => {
@@ -41,6 +42,7 @@ export const Homepage = () => {
     <>
       <div className='homepage-container'>
         <Home/>
+        <AboutMe/>
         <Portfolio/>
         <Contact/>
       </div>

@@ -15,7 +15,7 @@
     width: 100vw;
     display: flex;
     position: absolute;
-    margin-top: -25px;
+    margin-top: -20px;
     background-image: url('../../Assets/background.png'), linear-gradient(rgba(0, 0, 0, 0.052), rgba(255, 255, 255, 0.316), rgb(255, 255, 255));
     background-blend-mode: color;
     background-position: center;
